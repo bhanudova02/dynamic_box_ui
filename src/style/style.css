@@ -47,6 +47,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 section {
+    position: relative;
     margin-top: 10px;
     border: 0.9px solid #C8C8C8;
     padding: 14px 24px 14px 24px;
@@ -195,22 +196,53 @@ select {
 
 
 
-.dynamic-select {
-    border: 1px solid red;
+
+
+/* Badge */
+.badge {
+    position: absolute;
+    top:-4px;
+    right: 6px;
+    background: #FF6B82;
+    width: 119px;
+    border-radius: 0px 0px 4px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:1px 0px 2px 0px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.badge h2 {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.52px;
+    text-align: center;
+    color: white;
+}
+.badge::before {
+    content: '';
+    position: absolute;
+    top: 0.9px;
+    left: -6.2px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 11px 0;
+    rotate: -125deg;
+    border-color: transparent transparent #FF6B82 transparent;
+}
+.badge::after {
+    content: '';
+    position: absolute;
+    top: 0.9px;
+    right: -6.2px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 11px 8px;
+    rotate: 125deg;
+    border-color: transparent transparent #FF6B82 transparent;
+}
 
 

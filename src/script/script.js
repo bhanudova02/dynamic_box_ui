@@ -36,13 +36,16 @@ function handelShowBox(id, radioId, sectionId) {
         </div>
     </div>
     `;
-
     document.querySelectorAll("section").forEach(section => {
-        section.style.border = ""; 
-        section.style.backgroundColor = ""; 
+        section.style.border = "";
+        section.style.backgroundColor = "";
+        const badge = section.querySelector(".badge");
+        if (badge) badge.style.display = "none"; 
     });
-
     const section = document.getElementById(sectionId);
-    section.style.border = " 2px solid #FF6B82"; 
+    section.style.border = "2px solid #FF6B82";
     section.style.backgroundColor = "#FFF9FA";
+    section.style.paddingTop = "20px";
+    const selectedBadge = section.querySelector(".badge");
+    if (selectedBadge) selectedBadge.style.display = "block";
 }

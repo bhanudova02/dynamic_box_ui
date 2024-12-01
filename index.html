@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DynamicBox UI</title>
     <link rel="stylesheet" href="./src/style/style.css">
-    <script src="./src/script/script.js"></script>
+    <script src="./src/script/script.js" defer></script>
 </head>
 
 <body>
@@ -18,6 +18,9 @@
         </header>
 
         <section id="section1" onclick="handelShowBox('ExtraUI1', 'radio1', 'section1')">
+            <div class="badge" style="display: none;">
+                <h2>Most Popular</h2>
+            </div>
             <div class="option-card">
                 <div class="option-left">
                     <input type="radio" id="radio1" name="opt" class="custom-radio">
@@ -35,6 +38,9 @@
         </section>
 
         <section id="section2" onclick="handelShowBox('ExtraUI2', 'radio2', 'section2')">
+            <div class="badge" style="display: none;">
+                <h2>Most Popular</h2>
+            </div>
             <div class="option-card">
                 <div class="option-left">
                     <input type="radio" id="radio2" name="opt" class="custom-radio">
@@ -51,6 +57,9 @@
         </section>
 
         <section id="section3" onclick="handelShowBox('ExtraUI3', 'radio3', 'section3')">
+            <div class="badge" style="display: none;">
+                <h2>Most Popular</h2>
+            </div>
             <div class="option-card">
                 <div class="option-left">
                     <input type="radio" id="radio3" name="opt" class="custom-radio">
@@ -74,7 +83,6 @@
             <button class="add-to-cart-btn"><span class="plus-icon">&#43;</span> Add to Cart</button>
         </div>
     </main>
-    
 </body>
 
 </html>
