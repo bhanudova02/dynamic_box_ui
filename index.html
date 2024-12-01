@@ -17,12 +17,12 @@
             <hr>
         </header>
 
-        <section>
+        <section id="section1" onclick="handelShowBox('ExtraUI1', 'radio1', 'section1')">
             <div class="option-card">
                 <div class="option-left">
-                    <input type="radio" name="opt" class="custom-radio">
+                    <input type="radio" id="radio1" name="opt" class="custom-radio">
                     <div>
-                        <h2 class="unit-title">1 Unit <span class="unit-discount">10% Off </span></h2>
+                        <h2 class="unit-title">1 Unit <span class="unit-discount">10% Off</span></h2>
                         <p style="margin-top: 3px;">Standard Price</p>
                     </div>
                 </div>
@@ -31,72 +31,39 @@
                     <p class="price-original">$24.00 USD</p>
                 </div>
             </div>
+            <div id="ExtraUI1" class="ExtraUI"></div>
         </section>
 
-        <section>
+        <section id="section2" onclick="handelShowBox('ExtraUI2', 'radio2', 'section2')">
             <div class="option-card">
                 <div class="option-left">
-                    <input type="radio" name="opt" class="custom-radio">
+                    <input type="radio" id="radio2" name="opt" class="custom-radio">
                     <div>
                         <h2 class="unit-title">2 Unit <span class="unit-discount">20% Off</span></h2>
                     </div>
                 </div>
                 <div>
                     <h2 class="price-current">$18.00 USD</h2>
-                    <p class="price-original">$24.00 USD </p>
+                    <p class="price-original">$24.00 USD</p>
                 </div>
             </div>
+            <div id="ExtraUI2" class="ExtraUI"></div>
         </section>
 
-        <section>
+        <section id="section3" onclick="handelShowBox('ExtraUI3', 'radio3', 'section3')">
             <div class="option-card">
                 <div class="option-left">
-                    <input type="radio" name="opt" class="custom-radio">
+                    <input type="radio" id="radio3" name="opt" class="custom-radio">
                     <div>
-                        <h2 class="unit-title">3 Unit <span class="unit-discount">20% Off</span></h2>
+                        <h2 class="unit-title">3 Unit <span class="unit-discount">30% Off</span></h2>
                     </div>
                 </div>
                 <div>
                     <h2 class="price-current">$24.00 USD</h2>
-                    <p class="price-original">$24.00 USD </p>
+                    <p class="price-original">$24.00 USD</p>
                 </div>
             </div>
-            <div class="options-container">
-                <div class="select-group">
-                    <div style="display: flex; align-items: end; gap: 6px;">
-                        <span class="select-label">#1</span>
-                        <div>
-                            <div class="select-title">Size</div>
-                            <select>
-                                <option>S</option>
-                                <option>W</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div style="display: flex; align-items: end; gap: 6px;">
-                        <span class="select-label">#2</span>
-                        <select class="size-select">
-                            <option>S</option>
-                            <option>W</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="select-group">
-                    <div class="select-title">Color</div>
-                    <div>
-                        <select>
-                            <option>Black</option>
-                            <option>White</option>
-                        </select>
-                    </div>
-                    <div>
-                        <select class="color-select">
-                            <option>Black</option>
-                            <option>White</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
+            <div id="ExtraUI3" class="ExtraUI"></div>
         </section>
 
         <div class="delivery-info">
@@ -107,7 +74,7 @@
             <button class="add-to-cart-btn"><span class="plus-icon">&#43;</span> Add to Cart</button>
         </div>
     </main>
-
+    
 </body>
 
 </html>

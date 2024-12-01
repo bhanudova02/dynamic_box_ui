@@ -14,12 +14,24 @@ h1,h2,h3,h4,h5,h6 {
     all: unset;
 }
 
-.promotion-header {
-    width: 343px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 6px;
+@media screen and (orientation: landscape) {
+    .promotion-header {
+        width: 343px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 6px;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .promotion-header {
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 6px;
+    }
 }
 
 .promotion-title {
@@ -101,6 +113,11 @@ select {
     border: 0.9px solid #D9D9D9;
     opacity: 0px;
     padding: 1px 3px;
+
+}
+
+.option-card:hover {
+    cursor: pointer;
 }
 
 /* Option Card */
@@ -175,3 +192,25 @@ select {
     line-height: 12.03px;
     margin-bottom: 4px;
 }
+
+
+
+.dynamic-select {
+    border: 1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
